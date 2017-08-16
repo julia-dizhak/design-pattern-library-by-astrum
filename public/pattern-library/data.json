@@ -64,15 +64,72 @@
                     "title": "Colour scheme",
                     "type": "colors",
                     "colors": [
-                      "#789e56",
-                      "#505143",
-                      "#a8a8aa",
-                      "#e7e5e5",
-                      "ffffff",
-                      "#fbbf4e",
-                      "#87aff5",
-                      "#ff5656"
+                        "#789e56",
+                        "#505143",
+                        "#a8a8aa",
+                        "#e7e5e5",
+                        "ffffff",
+                        "#fbbf4e",
+                        "#87aff5",
+                        "#ff5656"
                     ],
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "branding",
+                    "name": "logo",
+                    "title": "test",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "logos",
+            "title": "Logos",
+            "components": [
+                {
+                    "group": "logos",
+                    "name": "logo-de",
+                    "title": "MoneyPark Ihre Hypothek",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "logos",
+                    "name": "logo-en",
+                    "title": "MoneyPark Your Mortgage",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "logos",
+                    "name": "hypothek-logo-de",
+                    "title": "Ihre Hypothek Logo",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "logos",
+                    "name": "hypothek-logo-en",
+                    "title": "Your mortgage Logo",
+                    "width": "half"
+                },
+                {
+                    "group": "logos",
+                    "name": "logo-no-claim",
+                    "title": "Logo without claim",
+                    "width": "half",
                     "options": {
                         "disable_code_sample": true
                     }
