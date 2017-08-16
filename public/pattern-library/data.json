@@ -1,21 +1,25 @@
 {
-    "project_logo": null,
-    "project_favicon": "favicon.png",
-    "project_name": null,
-    "project_url": null,
-    "copyright_start_year": null,
+    "project_logo": "https://mpcdn.ch/static/svg/logo/logo-moneypark-mortgage-en.svg",
+    "project_favicon": "https://mpcdn.ch/static/images/favicon/favicon.png",
+    "project_name": "MoneyPark",
+    "project_url": "https://moneypark.ch/en/",
+    "copyright_start_year": 2012,
     "client_name": null,
     "client_url": null,
     "creators": [
         {
-            "name": null,
-            "url": null
+            "name": "Julia Dizhak",
+            "url": "https://github.com/julia-dizhak"
+        },
+        {
+            "name": "Boris Garic",
+            "url": ""
         }
     ],
     "theme": {
         "border_color": "#E0E6ED",
         "highlight_color": "#F9FAFC",
-        "brand_color": "#00585C",
+        "brand_color": "#789e56",
         "background_color": "#FFFFFF",
         "code_highlight_theme": "github",
         "override_code_highlight_bg": "#F9FAFC",
@@ -51,11 +55,11 @@
     },
     "groups": [
         {
-            "name": "brnading",
+            "name": "branding",
             "title": "Branding",
             "components": [
                 {
-                    "group": "brnading",
+                    "group": "branding",
                     "name": "colour-scheme",
                     "title": "Colour scheme",
                     "type": "colors",
