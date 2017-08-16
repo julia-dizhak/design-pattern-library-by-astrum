@@ -1,2 +1,4 @@
-# design-pattern-library-by-astrum
-Design style guide by astrum pattern library
+
+# Pattern Library
+
+A really simple framework astrum for building pattern libraries.
