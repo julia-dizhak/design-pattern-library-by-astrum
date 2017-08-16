@@ -1,0 +1,4 @@
+bower_components
+node_components
+*.git
+.DS_Store
