@@ -34,7 +34,9 @@
         }
     },
     "assets": {
-        "css": ["https://mpcdn.ch/static/assets/dist/css/main-site.min.css"],
+        "css": [
+            "https://mpcdn.ch/static/assets/dist/css/main-site.min.css"
+        ],
         "js": []
     },
     "font_libraries": {
@@ -151,6 +153,21 @@
                     "name": "button-primary",
                     "title": "Primary button",
                     "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "components",
+            "title": "Components",
+            "components": [
+                {
+                    "group": "components",
+                    "name": "tooltip",
+                    "title": "Tooltip",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": false
+                    }
                 }
             ]
         }
