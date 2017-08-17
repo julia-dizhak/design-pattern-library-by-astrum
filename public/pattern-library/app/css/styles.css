@@ -862,6 +862,9 @@
 .ndpl-component__description {
     padding-bottom: 24px;
 }
+.ndpl-component__description p {
+    margin: auto auto 1.5em;
+}
 
 @media only screen and (min-width: 60em) {
 

@@ -66,12 +66,13 @@
                     "title": "Colour scheme",
                     "type": "colors",
                     "colors": [
-                        "#789e56",
+                        "#779c4b",
                         "#505143",
+                        "#71756d",
                         "#a8a8aa",
-                        "#e7e5e5",
                         "ffffff",
-                        "#fbbf4e",
+                        "#fbbf4c",
+                        "#eb9000",
                         "#87aff5",
                         "#ff5656"
                     ],
@@ -97,7 +98,7 @@
                 {
                     "group": "logos",
                     "name": "logo-de",
-                    "title": "MoneyPark Ihre Hypothek",
+                    "title": "MoneyPark (Ihre Hypothek)",
                     "width": "half",
                     "options": {
                         "disable_code_sample": true
@@ -106,7 +107,25 @@
                 {
                     "group": "logos",
                     "name": "logo-en",
-                    "title": "MoneyPark Your Mortgage",
+                    "title": "MoneyPark (Your Mortgage)",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "logos",
+                    "name": "logo-fr",
+                    "title": "MoneyPark (...)",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "logos",
+                    "name": "logo-it",
+                    "title": "MoneyPark (...) Italian",
                     "width": "half",
                     "options": {
                         "disable_code_sample": true
@@ -115,7 +134,7 @@
                 {
                     "group": "logos",
                     "name": "hypothek-logo-de",
-                    "title": "Ihre Hypothek Logo",
+                    "title": "Your mortgage Logo German",
                     "width": "half",
                     "options": {
                         "disable_code_sample": true
@@ -124,7 +143,19 @@
                 {
                     "group": "logos",
                     "name": "hypothek-logo-en",
-                    "title": "Your mortgage Logo",
+                    "title": "Your mortgage Logo English",
+                    "width": "half"
+                },
+                {
+                    "group": "logos",
+                    "name": "hypothek-logo-fr",
+                    "title": "Your mortgage Logo French",
+                    "width": "half"
+                },
+                {
+                    "group": "logos",
+                    "name": "hypothek-logo-it",
+                    "title": "Your mortgage logo Italian",
                     "width": "half"
                 },
                 {
