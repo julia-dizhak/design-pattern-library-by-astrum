@@ -1,4 +1,15 @@
 /* Custom styles for pattern library */
+
+/* custom component */
+.component-head {
+  font-size: 1em;
+  margin: 0 0 10px 0;
+  color: #789e56;
+  text-decoration: underline;
+  padding: 0 0 1px 0;
+}
+
+/* component from astrum */
 .ndpl-component__description p {
     margin: auto auto 1.5em;
 }
@@ -30,7 +41,7 @@
 
     1% {
         /*display: block;*/
-        opacity: 0;
+        opacity: 0.5;
     }
 
     100% {
@@ -54,7 +65,7 @@
   height: 0 !important;
   opacity: 0;
   /*animation: unset !important;*/
-  animation: fadeInFromNone 1.2s ease-in-out 1s forwards !important;
+  animation: fadeInFromNone 0.5s ease 1.1s forwards !important;
   top: -5px !important;
 }
 .cube-roof2:before {
@@ -65,7 +76,7 @@
   height: 0 !important;
   opacity: 0;
   /*animation: unset !important;*/
-  animation: fadeInFromNone 1.2s ease-in-out 1s forwards !important;
+  animation: fadeInFromNone 0.5s ease 1.1s forwards !important;
   top: -5px !important;
 }
 

@@ -1,12 +1,48 @@
-<div style="position:relative">
-  <span style="position:relative; display:inline-block;vertical-align:middle;">Recently closed mortgage rates</span>
-  <img width="24" height="24" style="display:inline-block;vertical-align:middle;" src="https://mpcdn.ch/static/svg/tooltip.svg" alt="">
+<div class="row">
 
-  <div class="popover ng-scope ng-isolate-scope right fade in" tooltip-animation-class="fade" ng-class="{ in: isOpen }" style="left:263px; top:-57px;"><div class="arrow"></div>
-  <div class="popover-inner">
-      <div class="popover-content">Thanks to more than CHF 1 billion of brokered mortgage volume, the experience of our mortgage specialists and the good relations with our partners, we manage to offer the best rates available to our customers.
-        <span class="popover-close">Close</span>
+  <div class="col-l6 col">
+    <p class="component-head">Tooltip example</>
+    <div style="position:relative">
+        <span style="position:relative; display:inline-block;vertical-align:middle;">Annual gross household income</span>
+        <img width="24" height="24" style="display:inline-block;vertical-align:middle;" src="https://mpcdn.ch/static/svg/tooltip.svg" alt="">
+
+        <div class="popover right fade in" tooltip-animation-class="fade" ng-class="{ in: isOpen }" style="left:263px; top:-57px;">
+          <div class="arrow"></div>
+          <div class="popover-inner">
+              <div class="popover-content">
+                <p>Please enter the combined annual gross income of all persons in your household without possible bonus payments.</p>
+                <p>This information helps us calculate your affordability.</p>
+                <span class="popover-close">Close</span>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-l6 col">
+    <p class="component-head">Tooltip with html template inside</p>
+    <div style="position:relative">
+        <span style="position:relative; display:inline-block;vertical-align:middle;">Annual gross household income</span>
+        <img width="24" height="24" style="display:inline-block;vertical-align:middle;" src="https://mpcdn.ch/static/svg/tooltip.svg" alt="">
+
+        <div class="popover right fade in" tooltip-animation-class="fade" ng-class="{ in: isOpen }" style="left:263px; top:-57px;">
+          <div class="arrow"></div>
+          <div class="popover-inner">
+              <div class="popover-content">
+                <ul>
+                  <li style="margin-bottom:15px;">
+                    <span>What:</span>
+                    <p>Please enter the expected value of the property for which you need the mortgage</p>
+                  </li>
+                  <li>
+                    <span>Why:</span>
+                    <p>The reasons for the estimated property value is so that we can estimate your property value to the most test</p>
+                  </li>
+                </ul>
+                <span class="popover-close">Close</span>
+              </div>
+          </div>
       </div>
   </div>
-  </div>
+
 </div>
