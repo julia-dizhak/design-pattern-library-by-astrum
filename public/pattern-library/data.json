@@ -42,7 +42,7 @@
     "font_libraries": {
         "typekit_code": null,
         "typography_web_fonts": null,
-        "google_web_fonts": null
+        "google_web_fonts": "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
     },
     "content": {
         "show_first_page_on_load": true,

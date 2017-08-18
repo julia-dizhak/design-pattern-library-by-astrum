@@ -22,6 +22,8 @@
                 }
             });
         </script>
+        <link rel="stylesheet" href="//fast.fonts.net/cssapi/816217b7-a9cd-4813-9687-1860a0c2a2ce.css" type="text/css" media="screen">
+
         <style>
             /* Targeted theme styles */
             .ndpl-folding-cube .ndpl-cube:before { background-color: {{ theme.brand_color }} !important; }
@@ -46,8 +48,8 @@
 
         <style v-if="theme.override_code_highlight_bg">.hljs { background: {{ theme.override_code_highlight_bg }}} !important; }</style>
 
-        /*<link rel="stylesheet" href="app/css/styles.min.css">*/
         <link rel="stylesheet" href="app/css/styles.css">
+        <link rel="stylesheet" href="app/css/custom-styles.css">
 
         <!-- Font Libraries -->
         <link rel="stylesheet" v-if="font_libraries.google_web_fonts" :href="font_libraries.google_web_fonts">
@@ -65,6 +67,9 @@
 
     <div class="ndpl-loading" :class="{ 'in-progress': ! loaded }">
         <div class="ndpl-folding-cube" v-if="!log.error.length && !log.info.length">
+            <div class="cube-roof1 ndpl-cube"></div>
+            <div class="cube-roof2 ndpl-cube"></div>
+
             <div class="ndpl-cube1 ndpl-cube"></div>
             <div class="ndpl-cube2 ndpl-cube"></div>
             <div class="ndpl-cube4 ndpl-cube"></div>
