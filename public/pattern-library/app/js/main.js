@@ -22,16 +22,16 @@ var ndplComponent = Vue.extend({
                 styles = '';
 
             // These inline style are only applied after the component has fully loaded
-            if(_this.loaded) {
+            if (_this.loaded) {
                 if(_this.component.options.sample_min_height) {
                     styles += 'min-height:' + _this.component.options.sample_min_height + 'px;';
                 }
             }
 
-            if(_this.component.options.sample_overflow_hidden) {
+            if (_this.component.options.sample_overflow_hidden) {
                 styles += 'overflow: hidden;';
             }
-            if(_this.component.options.sample_background_color) {
+            if (_this.component.options.sample_background_color) {
                 styles += 'background-color:' + _this.component.options.sample_background_color + ' !important;';
             }
 
@@ -75,7 +75,6 @@ var ndplComponent = Vue.extend({
                 });
             }
         });
-
         if (_this.component.html) {
             _this.$root.applySyntaxHighlighting(_this.$el);
         }
@@ -271,7 +270,7 @@ Vue.component('ndpl-script', ndplScript);
 /**
  * Vue instance
  */
-new Vue({
+vm = new Vue({
     el: 'html',
 
     data: {
@@ -329,11 +328,11 @@ new Vue({
 
     computed: {
         project: function() {
-            if(this.project_name && this.project_url) {
+            if (this.project_name && this.project_url) {
                 return '<a href="' + this.project_url + '" target="_blank"><span>' + this.project_name + '</span></a>';
             }
 
-            if(this.project_name && !this.project_url) {
+            if (this.project_name && !this.project_url) {
                 return this.project_name;
             }
 
@@ -438,7 +437,7 @@ new Vue({
         var sidebar = document.querySelector('.ndpl-sidebar');
         sidebar.addEventListener('mouseover', function(e) {
             _this.sidebar_scrolling = true;
-        })
+        });
         sidebar.addEventListener('mouseleave', function(e) {
             _this.sidebar_scrolling = false;
         });
@@ -457,7 +456,6 @@ new Vue({
     },
 
     methods: {
-
         /**
          * Apply syntax highlighting to pre code elements
          * within passed element.
@@ -560,6 +558,9 @@ new Vue({
                 // Set default variables
                 _this.$set('groups[' + i + '].description', '');
 
+                // Set default code
+                _this.$set('groups[' + i + '].code', '');
+
                 // Count groups
                 _this.groups_count = _this.groups.length;
 
@@ -580,7 +581,6 @@ new Vue({
 
                 // Add group components to group
                 for (var j = 0; j < group.components.length; j++) {
-
                     // Set default variables
                     _this.$set('groups[' + i + '].components[' + j + '].id', 'group-' + group.name + '-component-' + group.components[j].name);
                     _this.$set('groups[' + i + '].components[' + j + '].group_id', 'group-' + group.name);
@@ -597,6 +597,7 @@ new Vue({
                     // Add html and description properties to the component object.
                     _this.$set('groups[' + i + '].components[' + j + '].html', '');
                     _this.$set('groups[' + i + '].components[' + j + '].description', '');
+                    _this.$set('groups[' + i + '].components[' + j + '].code', '');
 
                     _this.loadComponent(_this.groups[i].components[j]);
                 }
@@ -641,9 +642,18 @@ new Vue({
             // Get and set component description
             _this.$http.get(component_path + '/description.md' + '?cb=' + new Date()).then(function (response) {
                 component.description = marked(response.data);
+
                 _this.areComponentsLoaded();
             }, function () {
                 _this.logError('Description file for <strong>' + component.name + '</strong> component failed to load from <code>' + component_path + '/description.md</code>');
+            });
+
+            // Get and set component code
+            _this.$http.get(component_path + '/code.md' + '?cb=' + new Date()).then(function (response) {
+                component.code = marked(response.data);
+                _this.areComponentsLoaded();
+            }, function () {
+                _this.logError('code <strong>' + component.name + '</strong> component failed to load from <code>' + component_path + '/code.md</code>');
             });
         },
 

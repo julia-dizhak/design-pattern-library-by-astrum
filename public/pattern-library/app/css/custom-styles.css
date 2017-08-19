@@ -5,7 +5,7 @@
   font-size: 1em;
   margin: 0 0 10px 0;
   color: #789e56;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   padding: 0 0 1px 0;
 }
 
@@ -14,6 +14,22 @@
     margin: auto auto 1.5em;
 }
 
+/*Code component*/
+/*.component-code {*/
+    /*padding: 36px;*/
+    /*background: rgb(248, 248, 248);*/
+    /*border: 1px solid #E0E6ED;*/
+    /*border-radius: 0 0 6px 6px;*/
+/*}*/
+.component-code-content {
+    padding: 36px;
+    background: rgb(248, 248, 248);
+    border: 1px solid #E0E6ED;
+    border-radius: 0 0 6px 6px;
+}
+.ndpl-component__sample--disabled-code {
+    border-radius: 6px 6px 0 0;
+}
 /**
  * Folding cube animation
  * Created by Tobias Ahlin

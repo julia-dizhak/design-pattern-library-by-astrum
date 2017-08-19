@@ -256,6 +256,7 @@
                                             <li><pre class="ndpl-pre">"colors": ["#4c4c4c","#7d8284","#a6b1b5","#e6eaf2","#FFFFFF"]</pre></li>
                                         </ul>
                                     </template>
+
                                     <template v-else>
                                         <div class="ndpl-component__container"
                                              v-show="isCodeVisible()">
@@ -291,6 +292,10 @@
                                             This component is hidden at this resolution.
                                         </div>
                                     </template>
+
+                                    <div class="component-code"
+                                         v-html="component.code">
+                                    </div>
                                 </div>
                             </ndpl-component>
                         </div>
@@ -312,6 +317,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.0/js/smooth-scroll.min.js"></script>
-    <script src="app/js/main.min.js"></script>
+    <!--<script src="app/js/main.min.js"></script>-->
+    <script src="app/js/main.js"></script>
     </body>
 </html>

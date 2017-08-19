@@ -72,6 +72,7 @@
                         "#e7e5e5",
                         "ffffff",
                         "#fbbf4e",
+                        "#eb9000",
                         "#87aff5",
                         "#ff5656"
                     ],
@@ -114,13 +115,20 @@
                     "group": "buttons",
                     "name": "button-request",
                     "title": "Request button",
-                    "width": "half"
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
                 },
                 {
                     "group": "buttons",
                     "name": "button-primary",
                     "title": "Primary button",
-                    "width": "half"
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+
                 }
             ]
         },
@@ -133,7 +141,8 @@
                     "name": "tooltip",
                     "title": "Tooltip",
                     "options": {
-                        "disable_code_sample": true
+                        "disable_code_sample": true,
+                        "sample_min_height": 200
                     }
                 }
             ]
