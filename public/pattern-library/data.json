@@ -141,7 +141,7 @@
                     "name": "tooltip",
                     "title": "Tooltip ( or popover)",
                     "options": {
-                        "disable_code_sample": true,
+                        "disable_code_sample": false,
                         "sample_min_height": 200
                     }
                 }

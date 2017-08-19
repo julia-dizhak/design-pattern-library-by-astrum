@@ -4,7 +4,7 @@
 .component-head {
   font-size: 1em;
   margin: 0 0 10px 0;
-  color: #789e56;
+  font-weight: bold;
   /*text-decoration: underline;*/
   padding: 0 0 1px 0;
 }
@@ -21,22 +21,45 @@
     /*border: 1px solid #E0E6ED;*/
     /*border-radius: 0 0 6px 6px;*/
 /*}*/
-.component-code-content {
-    padding: 36px;
-    background: rgb(248, 248, 248);
-    border: 1px solid #E0E6ED;
-    border-radius: 0 0 6px 6px;
+.component-code-content a {
+    color: #789e56;
+    border-bottom: 1px solid transparent;
+    transition: border 0.26s ease-in-out;
 }
-.ndpl-component__sample--disabled-code {
-    border-radius: 6px 6px 0 0;
+.component-code-content a:hover {
+    border-bottom: 1px solid #789e56;
 }
+.component-code-content p {
+    padding: 5px 10px;
+}
+.component-code-content p:first-child {
+    padding-top: 10px;
+}
+.component-code-content p:last-child {
+    padding-bottom: 10px;
+}
+.component-code-content .tab {
+    padding: 5px 10px;
+    font-weight: bold;
+}
+/*.component-code-content {*/
+    /*padding: 36px;*/
+    /*background: rgb(248, 248, 248);*/
+    /*border: 1px solid #E0E6ED;*/
+    /*border-radius: 0 0 6px 6px;*/
+/*}*/
+/*.ndpl-component__sample--disabled-code {*/
+    /*border-radius: 6px 6px 0 0;*/
+/*}*/
 
 /*Legend*/
 .legend {
 
 }
 .legend strong {
-
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 2px 0;
 }
 .legend p {
     margin: 0 0 5px 0;
