@@ -117,7 +117,7 @@
                     "title": "Request button",
                     "width": "half",
                     "options": {
-                        "disable_code_sample": true
+                        "disable_code_sample": false
                     }
                 },
                 {
@@ -139,7 +139,7 @@
                 {
                     "group": "components",
                     "name": "tooltip",
-                    "title": "Tooltip",
+                    "title": "Tooltip ( or popover)",
                     "options": {
                         "disable_code_sample": true,
                         "sample_min_height": 200

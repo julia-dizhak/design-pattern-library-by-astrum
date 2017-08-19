@@ -30,6 +30,21 @@
 .ndpl-component__sample--disabled-code {
     border-radius: 6px 6px 0 0;
 }
+
+/*Legend*/
+.legend {
+
+}
+.legend strong {
+
+}
+.legend p {
+    margin: 0 0 5px 0;
+}
+.legend p:last-child {
+    margin: 0 0 1.5em 0;
+}
+
 /**
  * Folding cube animation
  * Created by Tobias Ahlin
