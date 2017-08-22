@@ -76,7 +76,7 @@
             <div class="ndpl-cube3 ndpl-cube"></div>
         </div>
 
-        <h3 class="ndpl-loading__title" v-if="! loaded && !log.error.length && !log.info.length">Building pattern library for MoneyPark ...</h3>
+        <h3 class="ndpl-loading__title" v-if="! loaded && !log.error.length && !log.info.length">Building pattern library for MoneyPark project ...</h3>
         <h3 class="ndpl-loading__title" v-if="log.error.length">Hold up! We have some errors...</h3>
         <h3 class="ndpl-loading__title" v-if="log.info.length && !log.error.length">Looks like you have some setup to do...</h3>
 
@@ -127,8 +127,7 @@
 
                 <h1 class="ndpl-sidebar__title ndpl-c-brand-ca">
                     <span v-if="theme.show_project_name">{{{ project }}}</span>
-                    <small v-if="theme.titles.library_title"
-                           v-text="theme.titles.library_title"></small>
+                    <small v-if="theme.titles.library_title" v-text="theme.titles.library_title"></small>
                 </h1>
 
             </header>

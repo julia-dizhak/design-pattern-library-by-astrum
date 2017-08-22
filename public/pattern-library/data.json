@@ -28,7 +28,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "Pattern Library",
+            "library_title": "Design Pattern Library",
             "pages_title": "Overview",
             "components_title": "Components"
         }
@@ -45,7 +45,7 @@
         "google_web_fonts": "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
     },
     "content": {
-        "show_first_page_on_load": false,
+        "show_first_page_on_load": true,
         "title": "Overview",
         "pages": [
             {
