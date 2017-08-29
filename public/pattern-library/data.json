@@ -128,7 +128,6 @@
                     "options": {
                         "disable_code_sample": true
                     }
-
                 }
             ]
         },
@@ -136,6 +135,12 @@
             "name": "components",
             "title": "Components",
             "components": [
+                {
+                    "group": "components",
+                    "name": "select",
+                    "title": "Select",
+                    "width": "half"
+                },
                 {
                     "group": "components",
                     "name": "tooltip",
