@@ -137,6 +137,11 @@
             "components": [
                 {
                     "group": "components",
+                    "name": "datepicker",
+                    "title": "Datepicker"
+                },
+                {
+                    "group": "components",
                     "name": "select",
                     "title": "Select",
                     "width": "half"

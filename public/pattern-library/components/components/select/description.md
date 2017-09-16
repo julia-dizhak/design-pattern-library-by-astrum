@@ -1,1 +1,1 @@
-<p>Create a select/drop-down list with options</p>
+<p>Create a select (or drop-down) list with options</p>
